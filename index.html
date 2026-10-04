@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Shady Ramzy</title>
+<link rel="icon" type="image/png" href="images/Tab Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Cairo:wght@700;800;900&family=Unbounded:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-fixed"></div>
+
+<div class="scroll-container">
+<header>
+  <div class="nav">
+    <div class="brand" onclick="document.querySelector('.scroll-container').scrollTo({top: 0, behavior: 'smooth'});">
+      <div class="mark"></div>
+    </div>
+    
+    <div class="navlinks">
+      <a data-page="home" onclick="showPage('home')" class="active">
+        <span class="nav-icon-wrap"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="nav-label">About</span>
+      </a>
+      <a data-page="channels" onclick="showPage('channels')">
+        <span class="nav-icon-wrap"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+        <span class="nav-label">Links</span>
+      </a>
+      <a data-page="store" onclick="showPage('store')">
+        <span class="nav-icon-wrap"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+        <span class="nav-label">Store</span>
+      </a>
+    </div>
+
+    <div class="nav-right-space"></div>
+  </div>
+</header>
+
+<div id="home" class="page active">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1><img src="images/Logo.png" alt="Shady Ramzy" class="hero-logo"></h1>
+        <div class="hero-divider"></div>
+        <div class="role">Streamer · Content Creator</div>
+        <p class="desc">Live streams filled with exciting gameplay, real reactions, and unforgettable moments. Enjoy entertaining lives, intense gaming sessions, funny clips, and fresh content, with something new happening every time you tune in.</p>
+        <div class="cta-row">
+          <a class="btn-primary" onclick="window.open('https://kick.com/shadyramzyy', '_blank')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            Watch Live
+          </a>
+          <a class="btn-secondary" onclick="showPage('channels')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            All Links
+          </a>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo-glow" style="background-image:url('images/Shady.png');"></div>
+        <div class="photo-card">
+          <img class="photo-img" src="images/Shady.png" alt="Shady Ramzy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee" id="marqueeTrack">
+      <div class="marquee-group">
+        <span class="filled">Live</span><span>◆</span><span class="filled">Youtube</span><span>◆</span><span class="filled">Instagram</span><span>◆</span><span class="filled">Gaming</span><span>◆</span><span class="filled">Threads</span><span>◆</span><span class="filled">Streaming</span><span>◆</span><span class="filled">TikTok</span><span>◆</span><span class="filled">Fortnite</span><span>◆</span>
+      </div>
+      <div class="marquee-group">
+        <span class="filled">Live</span><span>◆</span><span class="filled">Youtube</span><span>◆</span><span class="filled">Instagram</span><span>◆</span><span class="filled">Gaming</span><span>◆</span><span class="filled">Threads</span><span>◆</span><span class="filled">Streaming</span><span>◆</span><span class="filled">TikTok</span><span>◆</span><span class="filled">Fortnite</span><span>◆</span>
+      </div>
+      <div class="marquee-group">
+        <span class="filled">Live</span><span>◆</span><span class="filled">Youtube</span><span>◆</span><span class="filled">Instagram</span><span>◆</span><span class="filled">Gaming</span><span>◆</span><span class="filled">Threads</span><span>◆</span><span class="filled">Streaming</span><span>◆</span><span class="filled">TikTok</span><span>◆</span><span class="filled">Fortnite</span><span>◆</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="about">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center;">
+      <div class="photo-wrap" style="justify-content:center;">
+        <div class="photo-glow" style="background-image:url('images/Shady2.png');"></div>
+        <div class="photo-card">
+          <img class="photo-img" src="images/Shady2.png" alt="Shady Ramzy">
+        </div>
+      </div>
+      <div class="about-copy">
+        <div class="about-title">Shady Ramzy</div>
+        <p>A streamer, YouTuber, and content creator known for his energetic personality, strong connection with his audience, and his expertise as a Fortnite professional. His streams are on Kick, where he shares intense gaming sessions, hilarious clips, and funny moments that keep his audience entertained and engaged.
+</p>
+        <div class="tags">
+          <div class="tags-row">
+            <div class="tag-chip">Content Creator</div>
+            <div class="tag-chip">Streams</div>
+            <div class="tag-chip">Lives</div>
+            <div class="tag-chip">Gaming</div>
+          </div>
+          <div class="tags-row">
+            <div class="tag-chip">Clips</div>
+            <div class="tag-chip">Shorts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="channels" class="page">
+  <section class="channels page-section">
+    <div class="wrap">
+      <div class="section-title follow-title">FOLLOW ME<span class="platform-line"></span><span class="solid-pink">ALL PLATFORMS.</span></div>
+      <div class="section-sub"></div>
+      <div class="channel-list">
+        
+        <div class="channel-row featured" onclick="window.open('https://kick.com/shadyramzyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon"><img src="images/Kick.png" alt="Kick"></div>
+            <div class="channel-name">Kick</div>
+          </div>
+          <div class="channel-right">
+            Watch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.tiktok.com/@shadyramzyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </div>
+            <div class="channel-name">TikTok</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.youtube.com/@shadyramzyyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div class="channel-name">YouTube</div>
+          </div>
+          <div class="channel-right">
+            Subscribe
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.instagram.com/shadyramzyy?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="channel-name">Instagram</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.instagram.com/shadyyyramzyy67/?utm_source=ig_web_button_share_sheet', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204.012 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="channel-name">Instagram (Clips)</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.instagram.com/shadyz677?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204.012 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div class="channel-name">Fortnite</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://kickbot.com/tips/ShadyRamzyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <img src="images/Tips.png" alt="Tips">
+            </div>
+            <div class="channel-name">TTS Tips</div>
+          </div>
+          <div class="channel-right">
+            Support
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.threads.com/@shadyramzyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon"><img src="images/threads.png" alt="Threads"></div>
+            <div class="channel-name">Threads</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://www.twitch.tv/shadyramzyy', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0 1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0Zm14.571 11.143-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+            </div>
+            <div class="channel-name">Twitch</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://open.spotify.com/user/31wdkof3kzjmm6l6hze7m6n6ybqa?si=a20dceaaeae24ce1', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 4.32-1.32 9.6-.66 13.32 1.62.42.18.6.84.42 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.72 1.621.539.3.719 1.02.42 1.56-.3.421-1.02.599-1.559.3z"/></svg>
+            </div>
+            <div class="channel-name">Spotify</div>
+          </div>
+          <div class="channel-right">
+            Follow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.open('https://discord.gg/tUsSgZZd8', '_blank')">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.077.077 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286ZM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.956 2.4189-2.1569 2.4189Zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+            </div>
+            <div class="channel-name">Discord Server</div>
+          </div>
+          <div class="channel-right">
+            Join
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="channel-row" onclick="window.location.href='mailto:shadyyyramzyyy@gmail.com'">
+          <div class="channel-left">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+            </div>
+            <div class="channel-name">Email</div>
+          </div>
+          <div class="channel-right">
+            Contact
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+
+        <div class="spotify-row">
+          <div class="spotify-card">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/23hLQDkvgqnG0tDqHuQNRI?utm_source=generator&si=16e77b98c1d94770" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          
+          <div class="custom-side-card fortnite-shop">
+            <img class="fortnite-icon" src="images/Epic Games.png" alt="Epic Games Logo">
+            <div class="fortnite-title">
+              <span class="fortnite-title-label">Item Shop Code</span>
+              <span class="fortnite-title-accent">SHR67</span>
+            </div>
+            <div class="fortnite-cta" data-role="cta" onclick="event.stopPropagation(); copyFortniteCode(this.closest('.fortnite-shop'))" style="cursor:pointer;">
+              <span data-role="cta-text">Copy Code</span>
+              <svg data-role="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="store" class="page">
+  <section class="cs-section">
+    <div class="cs-glow"></div>
+    <div class="cs-particles"><i style="--x:8%;--d:0s;--s:9s;--z:4px"></i><i style="--x:18%;--d:3s;--s:11s;--z:3px"></i><i style="--x:29%;--d:1s;--s:8s;--z:5px"></i><i style="--x:41%;--d:5s;--s:12s;--z:3px"></i><i style="--x:53%;--d:2s;--s:10s;--z:4px"></i><i style="--x:64%;--d:6s;--s:9s;--z:5px"></i><i style="--x:75%;--d:0s;--s:13s;--z:3px"></i><i style="--x:86%;--d:4s;--s:10s;--z:4px"></i><i style="--x:94%;--d:7s;--s:8s;--z:3px"></i><i style="--x:12%;--d:8s;--s:12s;--z:5px"></i><i style="--x:47%;--d:9s;--s:9s;--z:3px"></i><i style="--x:70%;--d:10s;--s:11s;--z:4px"></i></div>
+
+    <div class="cs-stage">
+      <div class="cs-cards" aria-hidden="true">
+        <div class="cs-mini c1"><span class="q">?</span><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span></div>
+        <div class="cs-mini c2"><span class="q">?</span><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span></div>
+        <div class="cs-mini c3"><span class="q">?</span><span class="lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span></div>
+      </div>
+
+      <div class="cs-badge"><span class="cs-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span><span class="cs-badge-text">Shadzo67</span></div>
+      <div class="cs-title">COMING SOON</div>
+      <div class="cs-sub"></div>
+
+      <div class="cs-actions">
+        <a class="cs-btn primary" onclick="showPage('channels')">Follow for updates</a>
+        <a class="cs-btn" onclick="showPage('home')">Back to Home</a>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  © 2026 Shady Ramzy. All rights reserved.
+  <div class="footer-credit">Developed by <a class="footer-credit-name" href="https://www.instagram.com/raed_tesla" target="_blank" rel="noopener">Raed Mosaed</a></div>
+</footer>
+</div>
+<script src="js/store.js"></script>
+<script src="js/copy-code.js"></script>
+<script src="js/navigation.js"></script>
+
+</body>
+</html>
