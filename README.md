@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Logo.png" width="220" alt="Shady Ramzy Logo">
+<img src="Logo.png" width="280" alt="Shady Ramzy Logo">
 
 # Shady Ramzy — Portfolio Website
 
