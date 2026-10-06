@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="images/logo.png" width="180" alt="Shady Ramzy Logo">
+<img src="Logo.png" width="220" alt="Shady Ramzy Logo">
 
 # Shady Ramzy — Portfolio Website
 
 A modern and responsive personal portfolio website built for **Shady Ramzy**, a Content Creator and Fortnite Player.
 
-The website brings his social media platforms, content, creator information, and contact options together in one clean and interactive experience.
+A modern creator portfolio designed to showcase Shady Ramzy’s content, gaming presence, social platforms, and digital identity.
 
 </div>
 
@@ -48,26 +48,8 @@ The website brings his social media platforms, content, creator information, and
 ```text
 Shady-Ramzy/
 │
+├── Logo.png
+├── README.md
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-│   ├── logo.png
-│   └── ...
-│
-└── README.md
-```
-
-## 🌐 Live Website
-
-[![Live Website](https://img.shields.io/badge/Live%20Website-Visit%20Website-8B5CF6?style=for-the-badge&labelColor=111111)](https://shady-ramzy.vercel.app/)
-
-## </> Developer
-
-**Developed by Raed Mosaed**
-
----
-
-© 2026 Shady Ramzy
+├── script.js
+└── style.css
